@@ -26,14 +26,14 @@ def run():
 
     st.write("# Welcome to migration shortcut world! 👋")
 
-    st.sidebar.success("Select a demo above.")
+    st.sidebar.success("Select a beautiful program above.")
 
     st.markdown(
         """
       In the menu to the left a bunch of regex scrips are created in order to make the refacoring work easier. 
     """
     )
-
-
+    with st.columns(3)[1]:
+        st.markdown("![Alt Text](https://media.tenor.com/vyrfV9Lp5AwAAAAM/refactor-del-siglo-winter-is-coming.gif)")
 if __name__ == "__main__":
     run()
