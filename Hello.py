@@ -30,7 +30,7 @@ def run():
 
     st.markdown(
         """
-      Her kommer det mye kjekt
+      In the menu to the left a bunch of regex scrips are created in order to make the refacoring work easier. 
     """
     )
 
