@@ -41,7 +41,9 @@ def generate_sql_query(df, input_table, output_table):
 
 # Streamlit interface
 st.title('SAS to SQL Converter')
-
+st.write("""
+This page will take raw SAS code from the extract function in 9.4, and create a SAS proc sql renaming from Upper to the classic camel case we have in SAS. This is made to lessen the work amount and also reduce the risk of error when changing the casing manual to get it to work with migrated pipelines. Simply take the output code and put in in a sas program and connect that to the SNOWFLAKE input.
+""")
 # Text area for user input
 user_input = st.text_area("Enter your SAS code here:", height=300)
 
