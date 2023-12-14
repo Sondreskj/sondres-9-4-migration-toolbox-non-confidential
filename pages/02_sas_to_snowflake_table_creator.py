@@ -267,7 +267,7 @@ def generate_create_table(df, procedure_name, author, schema_to):
     return create_table_code
 
 # Streamlit code
-st.title('SAS Table-Loader Converter')
+st.title('SAS Table-Loader Converter to Snowflake')
 st.write("""
 This page will take raw SAS code from the Table Loader function, and create a Snowflake table.
 """)
