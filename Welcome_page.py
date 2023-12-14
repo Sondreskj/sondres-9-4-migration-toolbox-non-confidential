@@ -24,7 +24,7 @@ def run():
         page_icon="👋",
     )
 
-    st.write("# Welcome to migration shourcut world! 👋")
+    st.write("# Welcome to migration shortcut world! 👋")
 
     st.sidebar.success("Select a demo above.")
 
