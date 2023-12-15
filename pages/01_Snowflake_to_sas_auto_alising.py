@@ -54,7 +54,7 @@ if st.button('Convert SAS to SQL'):
             input_table = '&_input1'
             output_table = '&_output1'
             sql_query = generate_sql_query(df, input_table, output_table)
-            st.text_area("SQL Query:", sql_query, height=300)
+            st.code(sql_query, language='sql')
         except Exception as e:
             st.error(f"An error occurred: {e}")
     else:
