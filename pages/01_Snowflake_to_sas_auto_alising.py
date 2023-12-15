@@ -27,7 +27,8 @@ def extract_extract(sas_code):
     return pd.DataFrame(columns)
 
 def generate_sql_query(df, input_table, output_table):
-    sql_query = "proc sql;\n"
+    sql_query = "/*This uwc is just to renamce snowflake input to have similar casing as the old 9.4 sas jobs had */"
+    sql_query += "proc sql;\n"
     sql_query += f"   create table {output_table} as\n"
     sql_query += "      select\n"
     for _, row in df.iterrows():
