@@ -30,7 +30,7 @@ def run():
 
     st.markdown(
         """
-      In the menu to the left a bunch of regex scrips are created in order to make the refacoring work easier. 
+      In the menu to the left a bunch of regex scrips are created in order to make the refactoring easier. 
     """
     )
     with st.columns(3)[1]:
