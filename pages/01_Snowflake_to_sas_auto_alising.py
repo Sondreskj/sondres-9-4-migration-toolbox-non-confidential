@@ -45,6 +45,7 @@ st.title('SAS to SQL Converter')
 st.write("""
 This page will take raw SAS code from the extract function in 9.4, and create a SAS proc sql renaming from Upper to the classic camel case we have in SAS. This is made to lessen the work amount and also reduce the risk of error when changing the casing manual to get it to work with migrated pipelines. Simply take the output code and put in in a sas program and connect that to the SNOWFLAKE input.
 """)
+st.write("""How to use. For best performance, create a new extract from the desired sas source table, map all columns and then take the code from that extract and put in the input below :), reason why is that i have not implemented parsing of different strucutre (Transformed/calculated columns)""")
 # Text area for user input
 user_input = st.text_area("Enter your SAS code here:", height=300)
 
